@@ -2,12 +2,14 @@
 
 A RESTful API built with Node.js and Express.js to manage school data, including adding new schools and retrieving nearby schools based on geographical location.
 
+I used the Haversine formula to calculate the great-circle distance between two geo-coordinates, which is accurate for Earth-scale distances
+
 ---
 
 ## 🚀 Features
 
 * ➕ Add new schools with location details
-* 📍 Fetch nearby schools using latitude & longitude
+*📍 Uses the Haversine formula to calculate distance and fetch nearby schools based on latitude and longitude.
 * 📏 Distance-based sorting (nearest first)
 * 🧱 Clean and scalable architecture
 * ⚡ Fast and optimized queries
@@ -63,7 +65,7 @@ SCHOOL-MANAGEMENT-API
 
 ```bash
 git clone https://git@github.com:rvcode-space-hub/school-management-api.git
-cd school-management-api
+
 ```
 
 ### 2️⃣ Install dependencies
@@ -87,9 +89,24 @@ DB_DATABASE=school_db
 ### 4️⃣ Run the server
 
 ```bash
-npm start
+npm run dev 
 ```
 
+
+## 🔄 Data Flow
+
+<p align="center">
+  <img src="School Management Data Flow.jpg" alt="Data Flow Diagram" width="700"/>
+</p>
+
+
+## 📄 API Documentation
+
+<p align="center">
+  <a href="https://documenter.getpostman.com/view/39236302/2sBXijLCXi" target="_blank">
+    <img src="https://img.shields.io/badge/View-Postman%20Docs-orange?style=for-the-badge&logo=postman" />
+  </a>
+</p>
 Server will run on:
 
 ```
@@ -203,7 +220,8 @@ This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
 
-**Ravi**
+**Ravi Shankar Singh**
 Backend Developer 🚀
+
 
 ---
